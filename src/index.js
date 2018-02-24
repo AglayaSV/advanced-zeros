@@ -1,6 +1,6 @@
 module.exports = function getZerosCount(number, base) {
-  // your implementation
-    let j = 1;
+  // ищу простые множители
+    let j = 0;
     let i = 2;
     let simpleMultiplierArr = [];
     do {
@@ -21,7 +21,6 @@ module.exports = function getZerosCount(number, base) {
     while (i < base);
 
     simpleMultiplierArr[j] = i;
-    simpleMultiplierArr.shift();
 
     let powSimpleMultiplierArr = [];
     for (let i = 0; i < simpleMultiplierArr.length; i++){
